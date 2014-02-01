@@ -51,6 +51,9 @@
     [UIView animateWithDuration:1.0f animations:^{
         [self.view layoutIfNeeded];
     }];
+    
+    NSLog(@"constraints after resize: %@", _redSquare.constraints);
+    NSLog(@"superview constraints after resize: %@", _redSquare.superview.constraints);
 }
 
 - (IBAction)moveBackToOriginalPosition:(UIButton *)sender {
